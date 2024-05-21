@@ -1,0 +1,13 @@
+.shopping-cart-container {
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+.cart-header {
+    background-color: red;
+}

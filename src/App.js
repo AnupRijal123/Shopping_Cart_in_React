@@ -4,20 +4,23 @@ import Store from './pages/Store';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import './styles/App.css';
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="main-container">
-        <Navbar />
-        <div className="content-container">
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/store' element={<Store />} />
-            <Route path='/about' element={<About />} />
-          </Routes>
+      <ShoppingCartProvider>
+        <div className="main-container">
+          <Navbar />
+          <div className="content-container">
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/store' element={<Store />} />
+              <Route path='/about' element={<About />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </ShoppingCartProvider>
     </BrowserRouter>
   )
 }
