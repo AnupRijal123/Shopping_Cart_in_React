@@ -12,9 +12,16 @@ h2 {
     font-size: 24px;
 }
 
+h3 {
+    font-size: 20px;
+    color: #000000;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
 p {
     margin: 0px;
-    color: green;
+    color: #000000;
     font-size: 16px;
     font-family: sans-serif;
 }
@@ -22,4 +29,29 @@ p {
 .main-container {
     background-color: #faf9f6;
     position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.g-5 {
+    gap: 5px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.color-gray {
+    color: #808080;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+button,
+.cursor-pointer {
+    cursor: pointer;
 }

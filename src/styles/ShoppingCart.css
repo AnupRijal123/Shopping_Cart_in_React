@@ -1,13 +1,26 @@
 .shopping-cart-container {
-    background-color: yellow;
     top: 0;
     right: 0;
     position: fixed;
     height: 100vh;
     overflow-y: auto;
-
+    width: 400px;
+    background-color: #ffffff;
 }
 
 .cart-header {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.cart-content {
+    height: calc(100vh - 58px);
+    overflow-y: auto;
+}
+
+.total-price-div {
+    justify-content: flex-end;
+    padding: 10px 15px;
+
 }

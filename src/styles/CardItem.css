@@ -1,0 +1,22 @@
+.card-item {
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.card-info-div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.remove-button {
+    border: 1px solid #FF7F7F;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #FF7F7F;
+}
+
+
+
+.card-name-div {
+    flex-direction: column;
+}
