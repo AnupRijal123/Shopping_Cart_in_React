@@ -16,5 +16,23 @@
         "name": "Furniture",
         "price": 30.99,
         "imgUrl": "./images/furniture.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Furniture",
+        "price": 30.99,
+        "imgUrl": "./images/furniture.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Furniture",
+        "price": 30.99,
+        "imgUrl": "./images/furniture.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Furniture",
+        "price": 30.99,
+        "imgUrl": "./images/furniture.jpeg"
     }
 ]

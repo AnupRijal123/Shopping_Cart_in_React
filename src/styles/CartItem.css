@@ -1,6 +1,8 @@
 .card-item {
     gap: 10px;
     padding: 10px 15px;
+    border: 2px solid #C0C0C0;
+    border-radius: 5px;
 }
 
 .card-info-div {
@@ -9,10 +11,12 @@
 }
 
 .remove-button {
-    border: 1px solid #FF7F7F;
+    border: 1px solid #C0C0C0;
     padding: 5px 8px;
     border-radius: 5px;
-    color: #FF7F7F;
+    color: #808080;
+    background-color: #ffffff;
+
 }
 
 

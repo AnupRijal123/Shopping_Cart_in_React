@@ -4,6 +4,7 @@ import Store from './pages/Store';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import './styles/App.css';
+import Footer from './components/Footer';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             </Routes>
           </div>
         </div>
+        <Footer />
       </ShoppingCartProvider>
     </BrowserRouter>
   )

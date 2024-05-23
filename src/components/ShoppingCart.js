@@ -4,29 +4,37 @@ import storeItems from '../data/items.json';
 import formatCurrency from '../utilities/formatCurrency';
 import '../styles/ShoppingCart.css';
 function ShoppingCart() {
-    const { closeCart, cartItems } = useShoppingCart()
+    const { closeCart, cartItems, cartQuantity } = useShoppingCart()
     return (
         <div className="shopping-cart-container">
 
             <div className="cart-header align-center">
-                <h3>Cart</h3>
+                <p>Your Shopping Cart({cartQuantity})</p>
                 <p className="color-gray cursor-pointer" onClick={closeCart}>X</p>
             </div>
 
             <div class="cart-content">
+                {cartQuantity === 0 &&
+                    <div className="empty-cart-message-div">
+                        <p className="color-gray">You have no items in your,items you add to cart will show here</p>
+
+                    </div>
+                }
                 {cartItems.map((item) => (
-                    <div key={item.id}>
+                    <div class="cart-row" key={item.id}>
                         <CartItem {...item} />
                     </div>
                 ))}
 
                 <div className="total-price-div d-flex">
-                    <h3>Total:{
-                        formatCurrency(cartItems.reduce((total, cartItem) => {
-                            const storeItem = storeItems.find(item => item.id === cartItem.id)
-                            return total + (storeItem?.price || 0) * cartItem.quantity
-                        }, 0))
-                    }</h3>
+                    {cartQuantity !== 0 &&
+                        <h3>Total:{
+                            formatCurrency(cartItems.reduce((total, cartItem) => {
+                                const storeItem = storeItems.find(item => item.id === cartItem.id)
+                                return total + (storeItem?.price || 0) * cartItem.quantity
+                            }, 0))
+                        }</h3>
+                    }
                 </div>
 
 

@@ -1,0 +1,38 @@
+.footer-container {
+    background-color: #000000;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 0px 40px;
+    margin-top: 40px;
+}
+
+.footer-container h4 {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-container h3 {
+    color: #ffffff;
+}
+
+.footer-container p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-section {
+    flex-direction: column;
+}
+
+.form-section input {
+    height: 20px;
+}
+
+.form-section .button {
+    height: 26px;
+    padding: 5px;
+}
+
+.contact-div {
+    flex-direction: column;
+}
