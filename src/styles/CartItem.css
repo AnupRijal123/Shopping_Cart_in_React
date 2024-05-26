@@ -24,3 +24,13 @@
 .card-name-div {
     flex-direction: column;
 }
+
+.card-name-div .button {
+    padding: 6px;
+}
+
+.card-name-div .action-button {
+    background-color: #808080;
+    color: #ffffff;
+    border: none;
+}

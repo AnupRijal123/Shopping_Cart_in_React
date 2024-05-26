@@ -3,36 +3,42 @@
         "id": 1,
         "name": "Car",
         "price": 1100.20,
-        "imgUrl": "./images/car.jpeg"
+        "imgUrl": "./images/car.jpeg",
+        "category": "Vehicles"
     },
     {
         "id": 2,
         "name": "Book",
         "price": 10.99,
-        "imgUrl": "./images/book.jpg"
+        "imgUrl": "./images/book.jpg",
+        "category": "Education"
     },
     {
         "id": 3,
-        "name": "Furniture",
+        "name": "Sofa",
         "price": 30.99,
-        "imgUrl": "./images/furniture.jpeg"
+        "imgUrl": "./images/furniture.jpeg",
+        "category": "Furniture"
     },
     {
         "id": 4,
-        "name": "Furniture",
+        "name": "chair",
         "price": 30.99,
-        "imgUrl": "./images/furniture.jpeg"
+        "imgUrl": "./images/furniture.jpeg",
+        "category": "Furniture"
     },
     {
         "id": 5,
         "name": "Furniture",
         "price": 30.99,
-        "imgUrl": "./images/furniture.jpeg"
+        "imgUrl": "./images/furniture.jpeg",
+        "category": "Home Appliance"
     },
     {
         "id": 6,
         "name": "Furniture",
         "price": 30.99,
-        "imgUrl": "./images/furniture.jpeg"
+        "imgUrl": "./images/furniture.jpeg",
+        "category": "Decoration"
     }
 ]

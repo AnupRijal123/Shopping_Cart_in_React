@@ -1,0 +1,33 @@
+.trending-now-container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-now-heading {
+    justify-content: space-between;
+}
+
+.trending-content {
+    /* background-color: Red; */
+    overflow-x: hidden;
+}
+
+.scrolling-div {
+    animation: scroll 12s linear infinite;
+    /* background-color: yellow; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.scrolling-div .card {
+    flex: 0 0 auto;
+}

@@ -9,10 +9,9 @@ function Navbar() {
 
     return (
         <div className="navbar d-flex align-center">
-            <h3 onClick={() => navigate('/')} className="cursor-pointer">navbar component</h3>
+            <h3 onClick={() => navigate('/')} className="cursor-pointer">Anup's Ecommerce</h3>
             <div className="link-div d-flex align-center">
-                <Link to='/about'>ABOUT</Link>
-                <Link to='/store'>CATEGORIES</Link>
+                <Link to='/store'>PRODUCTS</Link>
 
                 <div onClick={openCart} className="d-flex cursor-pointer cart-icon-div">
                     <img src={cartIcon} width='35px' height='35px' />
@@ -26,7 +25,7 @@ function Navbar() {
 
             </div>
 
-        </div>
+        </div >
     )
 }
 export default Navbar;

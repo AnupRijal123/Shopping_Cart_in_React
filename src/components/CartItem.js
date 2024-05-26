@@ -3,7 +3,10 @@ import storeItems from '../data/items.json';
 import formatCurrency from '../utilities/formatCurrency';
 import '../styles/CartItem.css';
 function CartItem({ id, quantity }) {
-    const { removeFromCart } = useShoppingCart();
+    const {
+        increaseCartQuantity,
+        decreaseCartQuantity,
+        removeFromCart } = useShoppingCart();
     const storeItem = storeItems.find((item) => item.id === id);
     if (storeItem === null) return null;
     return (
@@ -16,6 +19,15 @@ function CartItem({ id, quantity }) {
                         {quantity > 1 && <p className="color-gray font-small">x{quantity}</p>}
                     </div>
                     <p className="color-gray font-small">{formatCurrency(storeItem.price)}</p>
+                    <div>
+                        <button className="button white-button font-10 action-button"
+                            onClick={() => decreaseCartQuantity(storeItem.id)}
+                        >-</button>
+                        <button className="button white-button font-10">{quantity}</button>
+                        <button className="button white-button font-10 action-button"
+                            onClick={() => increaseCartQuantity(storeItem.id)}
+                        >+</button>
+                    </div>
                 </div>
                 <div className="d-flex g-5 align-center">
                     <p>{formatCurrency(storeItem.price * quantity)}</p>

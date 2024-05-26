@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Store from './pages/Store';
-import About from './pages/About';
+import StoreItem from './pages/StoreItem';
 import Navbar from './components/Navbar';
 import './styles/App.css';
 import Footer from './components/Footer';
@@ -17,7 +17,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/store' element={<Store />} />
-              <Route path='/about' element={<About />} />
+              <Route path='/store/:id' element={<StoreItem />} />
             </Routes>
           </div>
         </div>

@@ -22,29 +22,6 @@
 }
 
 
-.grid-container {
-    padding: 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card {
-    border: 1px solid #c0c0c0;
-    border-radius: 5px;
-    height: 220px;
-    width: 180px;
-
-}
-
-.image-div {
-    height: 160px;
-    padding: 2px;
-}
-
-.image-info-div {
-    padding: 5px;
-}
-
 .shop-now-container {
     height: 250px;
 }
@@ -60,22 +37,6 @@
     flex-basis: 50%;
 }
 
-
-
-.trending-now-heading {
-    justify-content: space-between;
-}
-
-
-.trending-content {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-}
-
-.trending-content .card {
-    flex: 0 0 auto;
-}
 
 @media only screen and (max-width:480px) {
     .image-container {
