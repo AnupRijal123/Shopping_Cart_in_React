@@ -7,9 +7,6 @@
     justify-content: center;
 }
 
-.product-row {
-    background-color: pink;
-}
 
 .product-column {
     background-color: blue;
@@ -47,9 +44,6 @@
     width: 50%;
 }
 
-.images-div {
-    background-color: pink;
-}
 
 .single-image-div {
     background-color: red;

@@ -13,7 +13,7 @@ function ShoppingCart() {
                 <p className="color-gray cursor-pointer" onClick={closeCart}>X</p>
             </div>
 
-            <div class="cart-content">
+            <div className="cart-content">
                 {cartQuantity === 0 &&
                     <div className="empty-cart-message-div">
                         <p className="color-gray">You have no items in your,items you add to cart will show here</p>

@@ -5,25 +5,23 @@
 
 
 .column {
-    background-color: red;
     width: 50%;
     aspect-ratio: 1/0.8;
 }
 
 .inner-column {
-    background-color: pink;
     width: 50%;
     flex-direction: column;
 }
 
 .inner-row {
-    background-color: blue;
     height: 50%;
 }
 
 
 .shop-now-container {
     height: 250px;
+    gap: 20px;
 }
 
 .text-div {
@@ -35,6 +33,25 @@
 
 .image-div {
     flex-basis: 50%;
+}
+
+.image-text-div {
+    position: relative;
+}
+
+.image-text-div img {
+    filter: brightness(80%);
+}
+
+.image-text-div img:hover {
+    filter: brightness(60%);
+}
+
+.text-inside-image {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #ffffff;
 }
 
 

@@ -12,6 +12,7 @@ function StoreItem() {
     const { id } = useParams();
     const itemID = parseInt(id);
     console.log(Items);
+
     // const [isFound, setIsFound] = useState(false);
     // console.log(isFound);
     // useEffect(() => {
@@ -111,4 +112,6 @@ function StoreItem() {
         </div >
     )
 }
+
+
 export default StoreItem;

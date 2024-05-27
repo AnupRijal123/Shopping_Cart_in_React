@@ -34,7 +34,7 @@ p {
 
 .main-container {
     position: relative;
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding-bottom: 40px;
 }
@@ -123,7 +123,17 @@ a {
     border-radius: 5px;
     height: 220px;
     width: 180px;
+    cursor: pointer;
 
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card h4 {
+    color: #808080;
 }
 
 .card:hover {
