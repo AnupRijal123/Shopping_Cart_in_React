@@ -4,10 +4,10 @@ import storeItems from '../data/items.json';
 import formatCurrency from '../utilities/formatCurrency';
 import '../styles/ShoppingCart.css';
 function ShoppingCart() {
-    const { closeCart, cartItems, cartQuantity } = useShoppingCart()
+    const { closeCart, cartItems, cartQuantity, isOpen } = useShoppingCart()
+    console.log(isOpen)
     return (
-        <div className="shopping-cart-container">
-
+        <div className={isOpen === false ? "shopping-cart-container" : "shopping-cart-container expanded"}>
             <div className="cart-header align-center">
                 <p>Your Shopping Cart({cartQuantity})</p>
                 <p className="color-gray cursor-pointer" onClick={closeCart}>X</p>

@@ -90,11 +90,13 @@ export function ShoppingCartProvider({ children }) {
                 cartItems,
                 cartQuantity,
                 openCart,
-                closeCart
+                closeCart,
+                isOpen
+
             }}
         >
             {children}
-            {isOpen && <ShoppingCart />}
+            {<ShoppingCart />}
         </ShoppingCartContext.Provider>
     );
 }
