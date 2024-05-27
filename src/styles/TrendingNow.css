@@ -8,13 +8,19 @@
 }
 
 .trending-content {
-    /* background-color: Red; */
     overflow-x: hidden;
+}
+
+.trending-content .card {
+    cursor: inherit;
+}
+
+.trending-content .card:hover {
+    border: 1px solid #c0c0c0;
 }
 
 .scrolling-div {
     animation: scroll 12s linear infinite;
-    /* background-color: yellow; */
 }
 
 @keyframes scroll {

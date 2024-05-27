@@ -13,7 +13,8 @@
         "name": "Apple Keyboard",
         "price": 18.99,
         "imgUrl": "./images/apple-keyboard.jpeg",
-        "category": "Gadgets"
+        "category": "Gadgets",
+        "imgUrl1": "./images/apple-keyboard2.jpeg"
     },
     {
         "id": 3,
@@ -48,7 +49,8 @@
         "name": "Simple Photo Frame",
         "price": 6,
         "imgUrl": "./images/photoframe2.jpeg",
-        "category": "Home Decoration"
+        "category": "Home Decoration",
+        "imgUrl1": "./images/photoframe1.png"
     },
     {
         "id": 8,
@@ -76,7 +78,8 @@
         "name": "Face Moisturizer",
         "price": 2.5,
         "imgUrl": "./images/lotion1.jpeg",
-        "category": "Beauty Products"
+        "category": "Beauty Products",
+        "imgUrl1": "./images/lotion2.jpeg"
     },
     {
         "id": 12,

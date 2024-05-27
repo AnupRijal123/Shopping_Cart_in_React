@@ -16,7 +16,9 @@ function Home() {
         item.id === 8 ||
         item.id === 1 ||
         item.id === 5 ||
-        item.id === 6
+        item.id === 6 ||
+        item.id === 11 ||
+        item.id === 2
     )
     return (
         <div className="home-page-container d-flex">
@@ -48,7 +50,7 @@ function Home() {
                 <div className="grid-container g-10">
 
                     {mostSoldItems.map((item) => (
-                        <div className="card" key={item.id}>
+                        <div onClick={() => { navigate('/store') }} className="card" key={item.id}>
                             <div className="image-div">
                                 <img src={item.imgUrl} width="100%" height="100%" />
                             </div>

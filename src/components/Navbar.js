@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import cartIcon from '../icons/shopping-cart-solid-svgrepo-com.svg';
 function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart();
-    const navigate = useNavigate();
-
+    const navigate = useNavigate()
     return (
         <div className="navbar d-flex align-center">
             <h3 onClick={() => navigate('/')} className="cursor-pointer">Anup's Ecommerce</h3>
