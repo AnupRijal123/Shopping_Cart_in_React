@@ -1,63 +1,42 @@
 import formatCurrency from '../utilities/formatCurrency';
 import { useShoppingCart } from '../context/ShoppingCartContext';
-import { useParams } from 'react-router-dom';
-import Items from '../data/items.json';
 import '../styles/StoreItem.css';
 import TrendingNow from '../components/TrendingNow';
-import { useEffect } from 'react';
-function StoreItem() {
+import LeftArrow from '../icons/left-arrow.svg';
+import { useEffect, useState } from 'react';
+function StoreItem({ item, handleclearItem }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const { id } = useParams();
-    const itemID = parseInt(id);
-    console.log(Items);
-
-    // const [isFound, setIsFound] = useState(false);
-    // console.log(isFound);
-    // useEffect(() => {
-    //     setIsFound(Items.find((item => item.id === itemID)));
-    // }, [Items]);
-
-
-
-
+    const storeItem = item;
 
     const { getItemQuantity,
         increaseCartQuantity,
         decreaseCartQuantity,
     } = useShoppingCart();
-    const quantity = getItemQuantity(itemID);
-    const storeItem = Items.find((item) => item.id === itemID)
-    console.log(storeItem)
+    const quantity = getItemQuantity(storeItem.id);
+
+    const [imageURL, setImageURL] = useState(storeItem.imgUrl);
+
+    const changeImage = (url) => {
+        setImageURL(url);
+    }
+
+
     return (
-        // <div>
-        //     <h2>Store Item component</h2>
-        //     <img src={imgUrl} width="200px" height="200px" />
-        //     <p>{name}</p>
-        //     <p>{formatCurrency(price)}</p>
-        //     <div>
-        //         {quantity === 0 ? (
-        //             <button onClick={() => increaseCartQuantity(id)}>+Add To Cart</button>
-        //         ) : (
-        //             <div>
-        //                 <button onClick={() => decreaseCartQuantity(id)}>-</button>
-        //                 <p>{quantity} in Cart</p>
-        //                 <button onClick={() => increaseCartQuantity(id)}>+</button>
-        //                 <button onClick={() => removeFromCart(id)}>Remove</button>
-        //             </div>
-        //         )}
-        //     </div>
-        // </div>
+
         <div>
             <div className="product-container d-flex">
                 <div className="product-heading-div d-flex">
+                    <div onClick={() => handleclearItem({})} className="back-button-div d-flex g-5 align-center cursor-pointer">
+                        <img src={LeftArrow} width="20px" height="20px" />
+                        <h4 className="font-10">BACK TO PRODUCTS</h4>
+                    </div>
                     <h3>{storeItem.name}</h3>
                 </div>
                 <div className="product-row d-flex g-10">
                     <div className="product-column">
-                        {storeItem.imgUrl}
-                        <img src={storeItem.imgUrl} height="100px" width="100px" />
+                        <img src={imageURL} height="100%" width="100%" />
                     </div>
                     <div className="product-column desription-div">
                         <div className="product-text-div">
@@ -85,9 +64,19 @@ function StoreItem() {
                 </div>
 
                 <div className="images-div d-flex g-5">
-                    <div className="single-image-div">a</div>
-                    <div className="single-image-div">b</div>
-                    <div className="single-image-div">c</div>
+                    <div className="single-image-div">
+                        <img onClick={() => changeImage(storeItem.imgUrl)} src={storeItem.imgUrl} width="100%" height="100%" />
+                    </div>
+                    {storeItem.imgUrl1 &&
+                        <div className="single-image-div">
+                            <img onClick={() => changeImage(storeItem.imgUrl1)} src={storeItem.imgUrl1} width="100%" height="100%" />
+                        </div>
+                    }
+                    {storeItem.imgUrl2 &&
+                        <div className="single-image-div">
+                            <img onClick={() => changeImage(storeItem.imgUrl2)} src={storeItem.imgUrl2} width="100%" height="100%" />
+                        </div>
+                    }
                 </div>
 
                 <div className="d-flex g-10">
@@ -108,8 +97,7 @@ function StoreItem() {
                 <TrendingNow />
             </div>
 
-            {/* {isFound === false && <h3>Sorry there is no items</h3>} */}
-        </div >
+        </div>
     )
 }
 

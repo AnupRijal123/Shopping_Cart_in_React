@@ -4,7 +4,9 @@
         "name": "Apple Earpods",
         "price": 200,
         "imgUrl": "./images/apple-earpod-1.jpeg",
-        "category": "Gadgets"
+        "category": "Gadgets",
+        "imgUrl1": "./images/apple-earpod-2.jpeg",
+        "imgUrl2": "./images/apple-earpod-3.jpeg"
     },
     {
         "id": 2,
@@ -71,7 +73,7 @@
     },
     {
         "id": 11,
-        "name": "white Skin Lotion",
+        "name": "Face Moisturizer",
         "price": 2.5,
         "imgUrl": "./images/lotion1.jpeg",
         "category": "Beauty Products"

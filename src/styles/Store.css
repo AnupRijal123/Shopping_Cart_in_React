@@ -1,10 +1,13 @@
 .category-heading {
     justify-content: space-between;
     padding: 20px 0px;
+    justify-content: center;
+    position: relative;
 }
 
-.category-heading h3 {
-    margin: auto;
+.home-button-div {
+    position: absolute;
+    left: 0;
 }
 
 

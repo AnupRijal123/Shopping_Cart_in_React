@@ -5,7 +5,6 @@ import formatCurrency from '../utilities/formatCurrency';
 import '../styles/ShoppingCart.css';
 function ShoppingCart() {
     const { closeCart, cartItems, cartQuantity, isOpen } = useShoppingCart()
-    console.log(isOpen)
     return (
         <div className={isOpen === false ? "shopping-cart-container" : "shopping-cart-container expanded"}>
             <div className="cart-header align-center">
@@ -21,7 +20,7 @@ function ShoppingCart() {
                     </div>
                 }
                 {cartItems.map((item) => (
-                    <div class="cart-row" key={item.id}>
+                    <div className="cart-row" key={item.id}>
                         <CartItem {...item} />
                     </div>
                 ))}

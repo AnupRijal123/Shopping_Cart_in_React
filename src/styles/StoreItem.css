@@ -5,6 +5,13 @@
 
 .product-heading-div {
     justify-content: center;
+    position: relative;
+}
+
+.product-heading-div .back-button-div {
+    position: absolute;
+    top: 20%;
+    left: 0;
 }
 
 
@@ -46,9 +53,9 @@
 
 
 .single-image-div {
-    background-color: red;
     width: 10%;
     aspect-ratio: 1/1;
+    cursor: pointer;
 }
 
 .product-info-div {

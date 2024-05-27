@@ -1,13 +1,7 @@
 import items from '../data/items.json';
 import formatCurrency from '../utilities/formatCurrency';
 import '../styles/TrendingNow.css';
-import { useNavigate } from 'react-router-dom';
 function TrendingNow() {
-    const navigate = useNavigate();
-    const handleCardClick = (id) => {
-        navigate(`/store/${id}`);
-        window.scrollTo(0, 0);
-    };
     return (
         <div className="trending-now-container d-flex">
             <div className="trending-now-heading d-flex align-center">
@@ -21,10 +15,7 @@ function TrendingNow() {
             <div className="trending-content">
                 <div className="scrolling-div d-flex g-10">
                     {items.map((item) => (
-                        <div className="card" key={item.id}
-                            onClick={function () {
-                                handleCardClick(item.id)
-                            }}>
+                        <div className="card" key={item.id}>
                             <div className="image-div">
                                 <img src={item.imgUrl} width="100%" height="100%" />
                             </div>

@@ -26,11 +26,9 @@ export function ShoppingCartProvider({ children }) {
 
     const openCart = () => {
         setIsOpen(true);
-        console.log('cart opened')
     };
     const closeCart = () => {
         setIsOpen(false);
-        console.log('closed clicked')
     }
 
     function getItemQuantity(id) {

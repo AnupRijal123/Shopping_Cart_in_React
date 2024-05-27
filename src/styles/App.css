@@ -149,6 +149,16 @@ a {
     padding: 5px;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+}
+
 @media only screen and (max-width:480px) {
     .main-container {
         width: 100%;
