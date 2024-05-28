@@ -13,7 +13,7 @@ function Store() {
     let categoryArray = [];
     const navigate = useNavigate();
     Items.map((item) => {
-        categoryArray.push(item.category);
+        return categoryArray.push(item.category);
     })
 
     let filteredCategory = categoryArray.filter((value, index) => {
@@ -46,7 +46,7 @@ function Store() {
                         <div className="home-button-div d-flex align-center g-5 cursor-pointer"
                             onClick={() => navigate('/')}
                         >
-                            <img src={leftArrow} width="20px" height="20px" />
+                            <img src={leftArrow} alt="arrow" width="20px" height="20px" />
                             <h4 className="font-10">Home</h4>
                         </div>
                         <h3>{selectedCategory}</h3>
@@ -71,7 +71,7 @@ function Store() {
                                 return (
                                     <div onClick={() => { selectItem(item) }} className="card" key={item.id}>
                                         <div className="image-div">
-                                            <img src={item.imgUrl} width="100%" height="100%" />
+                                            <img src={item.imgUrl} alt="item" width="100%" height="100%" />
                                         </div>
                                         <div className="image-info-div">
                                             <p>{item.name}</p>
@@ -80,6 +80,7 @@ function Store() {
                                     </div>
                                 )
                             }
+                            return null;
                         })}
                     </div>
                 </div>

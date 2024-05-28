@@ -11,7 +11,7 @@ function CartItem({ id, quantity }) {
     if (storeItem === null) return null;
     return (
         <div className="card-item d-flex">
-            <img src={storeItem.imgUrl} width="100px" height="80px" />
+            <img src={storeItem.imgUrl} alt="item" width="100px" height="80px" />
             <div className="card-info-div d-flex align-center">
                 <div className="card-name-div d-flex g-5">
                     <div className="d-flex g-5 align-center">

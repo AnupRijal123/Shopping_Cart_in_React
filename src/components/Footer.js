@@ -34,7 +34,7 @@ function Footer() {
                     <Link to='https://github.com/AnupRijal123/Shopping_Cart_in_React/tree/final-development'>
                         <div className="d-flex align-center g-5">
                             <p className="font-small">Get Code</p>
-                            <img src={GithubImage} width="20px" height="20px" />
+                            <img src={GithubImage} alt="githublogo" width="20px" height="20px" />
                         </div>
                     </Link>
                 </div>

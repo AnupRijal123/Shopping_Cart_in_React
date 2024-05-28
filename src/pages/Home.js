@@ -24,21 +24,21 @@ function Home() {
         <div className="home-page-container d-flex">
             <div className="d-flex g-10">
                 <div className="column image-text-div background-gray">
-                    <img src={household} className="left-to-right" width="100%" height="100%" />
+                    <img src={household} alt="houseimage" className="left-to-right" width="100%" height="100%" />
                     <h2 className="text-inside-image">Decor</h2>
                 </div>
                 <div className="column d-flex g-10 ">
                     <div className="inner-column image-text-div background-gray">
-                        <img src={skincare} className="top-to-bottom" width="100%" height="100%" />
+                        <img src={skincare} alt="skincareimage" className="top-to-bottom" width="100%" height="100%" />
                         <h2 className="text-inside-image">Skincare</h2>
                     </div>
                     <div className="inner-column d-flex g-10">
                         <div className="inner-row image-text-div background-gray">
-                            <img src={kitchen} className="right-to-left" width="100%" height="100%" />
+                            <img src={kitchen} alt="kitchenimage" className="right-to-left" width="100%" height="100%" />
                             <h2 className="text-inside-image">Kitchen</h2>
                         </div>
                         <div className="inner-row image-text-div background-gray">
-                            <img src={gadgets} className="bottom-to-top" width="100%" height="100%" />
+                            <img src={gadgets} alt="gadgetimage" className="bottom-to-top" width="100%" height="100%" />
                             <h2 className="text-inside-image">Gadgets</h2>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function Home() {
                     {mostSoldItems.map((item) => (
                         <div onClick={() => { navigate('/store') }} className="card" key={item.id}>
                             <div className="image-div">
-                                <img src={item.imgUrl} width="100%" height="100%" />
+                                <img src={item.imgUrl} alt="item" width="100%" height="100%" />
                             </div>
                             <div className="image-info-div">
                                 <p>{item.name}</p>
@@ -78,7 +78,7 @@ function Home() {
                 </div>
 
                 <div className='image-div'>
-                    <img src={wallDecoration1} width="100%" height="250px" />
+                    <img src={wallDecoration1} alt="wall" width="100%" height="250px" />
                 </div>
             </div>
 
@@ -86,7 +86,7 @@ function Home() {
 
             <div className="shop-now-container d-flex">
                 <div className='image-div'>
-                    <img src={wallDecoration1} width="100%" height="250px" />
+                    <img src={wallDecoration1} alt="wall" width="100%" height="250px" />
                 </div>
 
                 <div className='text-div d-flex'>

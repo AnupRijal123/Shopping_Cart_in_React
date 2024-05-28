@@ -14,7 +14,7 @@ function TrendingNow() {
                     {items.map((item) => (
                         <div className="card" key={item.id}>
                             <div className="image-div">
-                                <img src={item.imgUrl} width="100%" height="100%" />
+                                <img src={item.imgUrl} alt="item" width="100%" height="100%" />
                             </div>
                             <div className="image-info-div">
                                 <p>{item.name}</p>

@@ -13,7 +13,7 @@ function Navbar() {
                 <Link to='/store'>PRODUCTS</Link>
 
                 <div onClick={openCart} className="d-flex cursor-pointer cart-icon-div">
-                    <img src={cartIcon} width='35px' height='35px' />
+                    <img src={cartIcon} alt="cartimage" width='35px' height='35px' />
                     {cartQuantity !== 0 &&
                         <div className="red-circle">
                             <p className="font-small">{cartQuantity}</p>

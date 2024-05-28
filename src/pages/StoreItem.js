@@ -29,14 +29,14 @@ function StoreItem({ item, handleclearItem }) {
             <div className="product-container d-flex">
                 <div className="product-heading-div d-flex">
                     <div onClick={() => handleclearItem({})} className="back-button-div d-flex g-5 align-center cursor-pointer">
-                        <img src={LeftArrow} width="20px" height="20px" />
+                        <img src={LeftArrow} alt="arrowleft" width="20px" height="20px" />
                         <h4 className="font-10">BACK TO PRODUCTS</h4>
                     </div>
                     <h3>{storeItem.name}</h3>
                 </div>
                 <div className="product-row d-flex g-10">
                     <div className="product-column">
-                        <img src={imageURL} height="100%" width="100%" />
+                        <img src={imageURL} alt="item" height="100%" width="100%" />
                     </div>
                     <div className="product-column desription-div">
                         <div className="product-text-div">
@@ -69,16 +69,16 @@ function StoreItem({ item, handleclearItem }) {
 
                 <div className="images-div d-flex g-5">
                     <div className="single-image-div">
-                        <img onClick={() => changeImage(storeItem.imgUrl)} src={storeItem.imgUrl} width="100%" height="100%" />
+                        <img onClick={() => changeImage(storeItem.imgUrl)} src={storeItem.imgUrl} alt="item" width="100%" height="100%" />
                     </div>
                     {storeItem.imgUrl1 &&
                         <div className="single-image-div">
-                            <img onClick={() => changeImage(storeItem.imgUrl1)} src={storeItem.imgUrl1} width="100%" height="100%" />
+                            <img onClick={() => changeImage(storeItem.imgUrl1)} src={storeItem.imgUrl1} alt="item1" width="100%" height="100%" />
                         </div>
                     }
                     {storeItem.imgUrl2 &&
                         <div className="single-image-div">
-                            <img onClick={() => changeImage(storeItem.imgUrl2)} src={storeItem.imgUrl2} width="100%" height="100%" />
+                            <img onClick={() => changeImage(storeItem.imgUrl2)} src={storeItem.imgUrl2} alt="item2" width="100%" height="100%" />
                         </div>
                     }
                 </div>
