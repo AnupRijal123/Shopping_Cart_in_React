@@ -5,6 +5,7 @@ import StoreItem from './pages/StoreItem';
 import Navbar from './components/Navbar';
 import './styles/App.css';
 import Footer from './components/Footer';
+import NotFound from '../src/pages/NotFound';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/store' element={<Store />} />
               <Route path='/store/:id' element={<StoreItem />} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
         </div>
