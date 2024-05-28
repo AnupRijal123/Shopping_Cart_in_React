@@ -1,5 +1,5 @@
 import '../styles/Footer.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import GithubImage from '../UI-Images/githubLogo.png';
 function Footer() {

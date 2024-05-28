@@ -1,7 +1,6 @@
 import items from '../data/items.json';
 import formatCurrency from '../utilities/formatCurrency';
 import '../styles/TrendingNow.css';
-import { useState } from 'react';
 function TrendingNow() {
     return (
         <div className="trending-now-container d-flex">
