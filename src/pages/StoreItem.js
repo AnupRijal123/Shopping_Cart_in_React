@@ -40,7 +40,11 @@ function StoreItem({ item, handleclearItem }) {
                     </div>
                     <div className="product-column desription-div">
                         <div className="product-text-div">
-                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            <p>
+                                Customers have great review about this
+                                product. It has been our great pleasure to
+                                add this product in our store.
+                            </p>
                         </div>
                         <div className="d-flex quantity-div align-center">
                             <h4>Quantity</h4>
