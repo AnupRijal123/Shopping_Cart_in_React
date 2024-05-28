@@ -21,3 +21,14 @@
     border: 1px solid #808080;
     padding: 5px 8px;
 }
+
+@media only screen and (max-width:720px) {
+    .category-heading {
+        padding: 0px;
+        height: 60px;
+    }
+
+    .category-heading .home-button-div {
+        top: 0;
+    }
+}

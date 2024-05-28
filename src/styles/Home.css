@@ -133,4 +133,8 @@
         flex-direction: column;
         height: auto;
     }
+
+    .column h2 {
+        font-size: 12px;
+    }
 }

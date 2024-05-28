@@ -40,7 +40,7 @@ function StoreItem({ item, handleclearItem }) {
                     </div>
                     <div className="product-column desription-div">
                         <div className="product-text-div">
-                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaadasa asd  asd a s a sdasdasd asasda</p>
+                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                         </div>
                         <div className="d-flex quantity-div align-center">
                             <h4>Quantity</h4>
