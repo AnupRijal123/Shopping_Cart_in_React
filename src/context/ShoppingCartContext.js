@@ -94,7 +94,7 @@ export function ShoppingCartProvider({ children }) {
             }}
         >
             {children}
-            {<ShoppingCart />}
+            <ShoppingCart />
         </ShoppingCartContext.Provider>
     );
 }

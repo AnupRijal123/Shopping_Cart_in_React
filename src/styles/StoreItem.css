@@ -63,3 +63,10 @@
     width: 25%;
     padding: 10px;
 }
+
+@media only screen and (max-width:720px) {
+    .product-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

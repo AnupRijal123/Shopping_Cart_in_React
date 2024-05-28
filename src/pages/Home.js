@@ -23,22 +23,22 @@ function Home() {
     return (
         <div className="home-page-container d-flex">
             <div className="d-flex g-10">
-                <div className="column image-text-div">
-                    <img src={household} width="100%" height="100%" />
+                <div className="column image-text-div background-gray">
+                    <img src={household} className="left-to-right" width="100%" height="100%" />
                     <h2 className="text-inside-image">Decor</h2>
                 </div>
                 <div className="column d-flex g-10 ">
-                    <div className="inner-column image-text-div">
-                        <img src={skincare} width="100%" height="100%" />
+                    <div className="inner-column image-text-div background-gray">
+                        <img src={skincare} className="top-to-bottom" width="100%" height="100%" />
                         <h2 className="text-inside-image">Skincare</h2>
                     </div>
                     <div className="inner-column d-flex g-10">
-                        <div className="inner-row image-text-div">
-                            <img src={kitchen} width="100%" height="100%" />
+                        <div className="inner-row image-text-div background-gray">
+                            <img src={kitchen} className="right-to-left" width="100%" height="100%" />
                             <h2 className="text-inside-image">Kitchen</h2>
                         </div>
-                        <div className="inner-row image-text-div">
-                            <img src={gadgets} width="100%" height="100%" />
+                        <div className="inner-row image-text-div background-gray">
+                            <img src={gadgets} className="bottom-to-top" width="100%" height="100%" />
                             <h2 className="text-inside-image">Gadgets</h2>
                         </div>
                     </div>
